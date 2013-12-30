@@ -1,0 +1,21 @@
+- var scripts = getBlock('scripts')
+- var styles = getBlock('styles')
+
+- styles.add(["/styles/resume.css"])
+
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")			
+		title= getPreparedTitle()
+		
+		// Styles
+		!= styles.toHTML()
+		link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.min.css")
+
+	body
+		.content
+			!= content
+
+		!= scripts.toHTML()

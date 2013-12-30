@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+@background: #0B486B;
+@headertitle: #3B8686;
+@title: #71857B;
+
+body {
+  	background-color: @background;
+	font-family: "PT Sans", Helvetica, sans-serif;
+  	font-size: 16px;
+  	line-height: 1.5;
+}
+
+a {
+	color: @title;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	color: @headertitle;
+}
+
+h2 {
+	border-bottom: 1px solid @title;
+	width: 250px;
+	color: @title;
+}
+
+h3 {
+	margin-bottom: -10px;
+	color: @headertitle;
+	font-weight: bold;
+}
+
+.content {
+	background: white;
+	max-width: 800px;
+	margin: 0px auto;
+
+	margin-bottom: 50px;
+	padding: 10px 50px 30px;
+
+	border-color: black;
+	border-radius: 3px;
+}
